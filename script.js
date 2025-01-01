@@ -70,11 +70,37 @@
 // result=a%b;
 // document.write(result);
 // document.write(linebreak);
-function myFunction(){
-var x=3+3;
-var y="3"+3;
-var z="Hello"+3;
-var demoP=document.getElementById("demo");
-demoP.innerHTML=x+"<br>"+y+"<br>"+z;
-}
+// function myFunction(){
+// var x=3+3;
+// var y="3"+3;
+// var z="Hello"+3;
+// var demoP=document.getElementById("demo");
+// demoP.innerHTML=x+"<br>"+y+"<br>"+z;
+// function Redirect(){
+//     window.location="https://www.facebook.com/";
  
+
+// }
+// document.write("you will be redirected to main page in 10 sec");
+// setTimoOut('Redirect()',10000);
+// document.addressform.yourname.value
+// document.addressform.phone.value
+// document.addressform.email.value
+// function validateForm(){
+//     var x=document.forms["myForm"]["fname"].value;
+//     if(x==null||x==""){
+//         alert("First name must be filled out");
+//         return false;
+//     }
+// }
+function validateForm(){
+    var y=document.forms["myForm"]["call"].value;
+    if(y.length!=10){
+        alert("enter 10 idgit mobile number");
+        return false;
+    }
+    if(!y.match(/^[0-9]{10}$/)){
+        alert("only digits,please");
+        return false;
+    }
+}
